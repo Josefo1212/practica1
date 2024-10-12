@@ -1,2 +1,4 @@
-jose 31778248 jffcastillo0@gmail.com 
-carlos 31567982 carlos0@gmail.com 
+jose 31778248 jffcastillo0@gmail.com
+carlos 31759534 carlos@gmail.com
+juan 12674094 juan@gmail.com
+javier 10876243 javier@gmail.com

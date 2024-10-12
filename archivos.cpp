@@ -3,10 +3,14 @@
 #include<string>
 using namespace std;
 
+struct Personas{
+    string nombre;
+    int cedula;
+    string correo;
+}P;
+
 int main(){
-    int x,cedula=0;
-    string nombre,correo;
-    int data;
+    int x=0;
     ofstream output("./data/data.txt");
 
     if( ! output.is_open()){
@@ -17,15 +21,14 @@ int main(){
     cout<<"Ingrese la cantidad de datos que desea crear: ";
     cin>>x;
 
-    while (x>0){
-        cout<<"Ingrese el nombre: "<<endl;
-        cin>>nombre;
-        cout<<"Ingrese la cedula: "<<endl;
-        cin>>cedula;
-        cout<<"Ingrese el correo: "<<endl;
-        cin>>correo;
-        output<<nombre<<" "<<cedula<<" "<<correo<<" "<<endl;
-        x--;
+    for(int i=0; i<x;i++){
+        cout<<"Ingrese nombre "<<i+1<<": ";
+        cin>>P.nombre;
+        cout<<"Ingrese la cedula: ";
+        cin>>P.cedula;
+        cout<<"Ingrese correo: ";
+        cin>>P.correo;
+        output<<P.nombre<<" "<<P.cedula<<" "<<P.correo<<endl;
     }
-
+    return 0;
 }
